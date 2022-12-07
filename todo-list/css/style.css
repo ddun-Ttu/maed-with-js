@@ -1,0 +1,182 @@
+@import url(./reset.css);
+
+body {
+    padding-top: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 백그라운드 이미지 */
+#bgImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 1880px;
+    min-width: 1400px;
+    max-height: 1400px;
+    min-height: 1200px;
+    z-index: -5;
+    filter: brightness(40%);
+}
+
+/* 날씨 및 지역 */
+#weather {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+    padding-bottom: 30px;
+    justify-content: center;
+    
+}
+
+/* 로그인 폼 */
+#login-form {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+#login-form input:first-child {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 240px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s;
+}
+
+#login-form input:first-child:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/* placeholder의 색상을 바꿈 */
+#login-form input:hover::-webkit-input-placeholder {
+    color: rgb(50, 50, 50);
+}
+#login-form input:first-child:focus {
+    outline: none;
+    border-bottom: 1px solid White;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* 로그인 버튼 */
+#login-form input:nth-child(2) {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.6);   
+    color: rgb(80, 80, 80);
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#login-form input:nth-child(2):hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#login-form input:nth-child(2):active {
+    background-color: darkgray;
+    color: white;
+    outline: none;
+}
+
+/* 시계 */
+#clock {
+    text-align: center;
+    font-size: 8rem;
+    margin: 20px;
+    color: white;
+    padding: 30px;
+    font-weight: bold;
+}
+
+/* h1 */
+#greeting {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* 투두 폼 */
+#todo-form {
+    text-align: center;
+}
+
+#todo-form input {
+    width: 540px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: -50px 0 20px 0;
+    transition: all 0.4s;
+}
+#todo-form input:hover {
+    background-color: rgba(255, 255,  255, 0.4);
+}
+#todo-form input:hover::-webkit-input-placeholder {
+    color: rgb(50, 50, 50);
+}
+
+#todo-form input:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* 투두 리스트 */
+#todo-list  {
+    text-align: center;
+    margin-top: 10px;
+}
+#todo-list li {
+    width: 540px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    list-style: none;
+    color: rgba(250, 250, 250, 0.8);
+}
+#todo-list li:hover {
+    color: rgb(106 ,158, 255);
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+#todo-list button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#todo-list button:hover {
+    cursor: pointer;
+}
+
+/* 명언 */
+#quote {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
