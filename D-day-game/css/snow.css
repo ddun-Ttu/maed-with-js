@@ -1,0 +1,33 @@
+/* 스크롤바 없애기 */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Chrome, Safari, Opera 스크롤바 숨기기 */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* IE, Edge 스크롤바 숨기기 */
+  .example {
+    -ms-overflow-style: none;
+  }
+
+
+.snowflake {
+    z-index: 5;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+}
+
+@keyframes fall {
+    form { }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}

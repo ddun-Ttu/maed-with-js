@@ -1,0 +1,126 @@
+@import url(./reset.css);
+@import url(./snow.css);
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Gugi&family=Poppins:wght@700&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/dday.jpg) no-repeat center;
+    background-size: cover;
+    font-family: 'Gugi', 'Dokdo', 'Poppins' ;
+   
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.main {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 2rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.day-input {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70%;
+}
+
+/* 로그인 폼 */
+
+.login-form {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.login-form input:first-child {
+    text-align: center;
+    color: white;
+    font-style: 1.5rem;
+    padding: 10px;
+    width: 190px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s;
+}
+
+.login-form input:first-child:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form input:first-child:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(144, 218, 255);
+}
+
+/* placeholder의 색상을 바꿈 */
+.login-form input:hover::-webkit-input-placeholder {
+    color: rgb(50, 50, 50);
+}
+
+/* 확인 버튼 */
+
+.login-form input:nth-child(2) {
+    width: 80px;
+    height: 34px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgba(144, 218, 255, 0.6);
+    color:rgb(124, 124, 124);
+    font-size: 0.9rem;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.login-form input:nth-child(2):hover {
+    background-color: rgba(144, 218, 255, 0.9);
+    color:rgb(25, 25, 25);
+}
+.login-form input:nth-child(2):active {
+    background-color: rgb(0, 170, 255);
+    color: white;
+    outline: none;
+}
